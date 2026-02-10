@@ -4,3 +4,5 @@ if user_input.isdigit():
     for i in range(1, 11):
         result = number * i
         print(f"{number} X {i} = {result:3}")
+else:
+    print("Error")
