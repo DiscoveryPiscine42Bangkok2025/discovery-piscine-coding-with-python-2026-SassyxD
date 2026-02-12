@@ -2,12 +2,9 @@ import sys
 
 args = sys.argv[1:]
 
-if len(args) != 1:
+if len(args) < 0:
     print("none")
 else:
-    word = args[0]
-    match = input("What was the parameter? ")
-    if word == match:
-        print("Good job!")
-    else:
-        print("Nope, sorry...")
+    print(f"parameters: {len(args)}")
+    for arg in args:
+        print(f"{arg}: {len(arg)}")
